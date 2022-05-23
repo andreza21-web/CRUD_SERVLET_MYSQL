@@ -4,6 +4,9 @@ import java.util.List;
 
 public class ProdDao {
 
+    //Andreza do Nascimento Pessoa  Matricula: Cb3012191
+    //Lidiane Souza Soares          Matricula:CB3012026
+
     /**
      * Connection database MySql
      * */

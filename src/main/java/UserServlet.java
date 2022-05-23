@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+//Andreza do Nascimento Pessoa  Matricula: Cb3012191
+//Lidiane Souza Soares          Matricula:CB3012026
+
 @WebServlet("/")
 public class UserServlet extends HttpServlet {
 
