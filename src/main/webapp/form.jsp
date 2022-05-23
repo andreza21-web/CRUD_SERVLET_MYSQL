@@ -51,7 +51,7 @@
 				</caption>
 
 				<c:if test="${prod != null}">
-					<input type="hidden" name="id" value="<c:out value='${prod.id}' />" />
+					<input type="hidden" name="id" value="<c:out value='${user.id}' />" />
 				</c:if>
 
 				<fieldset class="form-group">

@@ -65,15 +65,13 @@ public class UserServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    private void showNewForm(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    private void showNewForm(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("form.jsp");
         dispatcher.forward(request, response);
     }
 
 
-    private void showEditForm(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, ServletException, IOException {
+    private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
 
         String sid=request.getParameter("id");
         int id=Integer.parseInt(sid);
@@ -85,8 +83,7 @@ public class UserServlet extends HttpServlet {
 
     }
 
-    private void insertProduto(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, IOException, ServletException {
+    private void insertProduto(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
 
         String nome = request.getParameter("nome");
         int unidadeCompra = Integer.parseInt(request.getParameter("unidadeCompra"));
@@ -96,13 +93,12 @@ public class UserServlet extends HttpServlet {
 
         Produto newUser = new Produto(nome, unidadeCompra, descricao, qtdPrevistoMes, precoMaxComprado);
 
-
         ProdDao.save(newUser);
         response.sendRedirect("list");
     }
 
-    private void updateProduto(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, IOException {
+    private void updateProduto(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+
         int id = Integer.parseInt(request.getParameter("id"));
         String nome = request.getParameter("nome");
         int unidadeCompra = Integer.parseInt(request.getParameter("unidadeCompra"));
@@ -117,8 +113,8 @@ public class UserServlet extends HttpServlet {
 
 
 
-    private void deleteProduto(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, IOException {
+    private void deleteProduto(HttpServletRequest request, HttpServletResponse response)throws SQLException, IOException {
+
         int id = Integer.parseInt(request.getParameter("id"));
         System.out.println(id);
         ProdDao.delete(id);
