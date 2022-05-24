@@ -10,14 +10,14 @@ Os prints da tela:
 
 Tela com os alunos
 
-<img src="Crud.png">
+<img src="CRUD.png">
 Crud com formulario
 
-<img src="Crud-form.png">
+<img src="CRUD-form.png">
 
 Crud com lista produtos
 
-<img src="Crud-list.png">
+<img src="CRUD-list.png">
 Dados populados no banco de dados MySQL
 
 <img src="MySQL.png">
