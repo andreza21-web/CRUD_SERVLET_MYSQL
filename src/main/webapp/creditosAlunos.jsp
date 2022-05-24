@@ -37,8 +37,7 @@
 			<hr>
             <label style="color: blue">Andreza do Nascimento Pessoa Cb3012191</label>
             </br>
-            <label style="color: blue" >Lidiane Souza Soares  CB3012026</label>
-            </br>
+
 		</div>
 	</div>
 </body>

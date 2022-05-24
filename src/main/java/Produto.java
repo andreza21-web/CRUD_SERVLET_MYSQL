@@ -1,8 +1,5 @@
 public class Produto {
 
-    //Andreza do Nascimento Pessoa  Matricula: Cb3012191
-    //Lidiane Souza Soares          Matricula:CB3012026
-
     private int id;
     private String nome;
     private  int unidadeCompra;
